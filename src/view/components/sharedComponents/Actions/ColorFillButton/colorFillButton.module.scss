@@ -1,0 +1,23 @@
+.colorFill {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px #aebec8;
+  background-color: #FFF;
+  overflow: hidden;
+
+  &.transparent {
+    background: #fff;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 24px;
+      background: blue;
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+}

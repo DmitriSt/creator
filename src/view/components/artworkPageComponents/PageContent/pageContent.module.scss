@@ -1,0 +1,35 @@
+﻿@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+.wrapper {
+  @include wrapperDesktop;
+  @include paragraph;
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+  }
+
+}
+.edit_icon {
+  margin-right: 10px;
+  path {
+    stroke: var(--brand-color);
+  }
+}
+.title {
+  padding-top: 38px;
+  padding-bottom: 16px;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}

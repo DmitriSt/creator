@@ -1,0 +1,49 @@
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
+
+.wrapper {
+  width: 250px;
+  height: 48px;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  div {
+    height: 100%;
+  }
+  .image_wrapper:hover {
+    cursor: pointer;
+  }
+  .image_wrapper {
+    display: flex;
+    align-items: center;
+    & svg {
+      width: 68px;
+      height: 22px;
+      padding: 0;
+    }
+  } 
+  img {
+    height: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  .results {
+    color: $gray-text;
+    vertical-align: middle;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    height: 100%;
+    background-color: #fff;
+    padding: 0 20px 0 0;
+    opacity: 0.5;
+  }
+}
+.disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  input {
+    cursor: not-allowed;
+  }
+}

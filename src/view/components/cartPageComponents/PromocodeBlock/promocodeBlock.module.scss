@@ -1,0 +1,22 @@
+@import '../../../styles/colors';
+
+.text {
+  color: var(--brand-color);
+  font-weight: normal;
+}
+.icon_default {
+  cursor: pointer;
+}
+.disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+.button:last-child {
+  margin-right: 20px;
+  background-color: transparent;
+  color: var(--brand-color);
+  font-weight: bold;
+  font-size: 14px;
+  width: auto;
+  padding: 0;
+}

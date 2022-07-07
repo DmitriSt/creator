@@ -1,0 +1,47 @@
+@import '../../../../../styles/sizes';
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  .thumbWrapper {
+    display: inline-block;
+    padding: 2px;
+    margin-top: -5px;
+    border: 3px solid transparent;
+  }
+  &.active {
+    .thumbWrapper {
+      border: 3px solid var(--brand-color);
+    }
+    .title {
+      opacity: 1;
+    }
+  }
+  &.disabled {
+    .thumbWrapper {
+      border: 3px dashed var(--brand-color);
+    }
+  }
+  svg {
+    display: block;
+    pointer-events: none;
+    // max-height: 102px;
+  }
+  .title {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    display: inline-block;
+    padding: 4px 10px;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 12px;
+    box-sizing: border-box;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+}

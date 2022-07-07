@@ -1,0 +1,20 @@
+$mover-size: 20px;
+
+.mover {
+  width: $mover-size;
+  max-width: $mover-size;
+  min-height: inherit;
+  background-color: rgba(101, 113, 118, 0.3);
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: grab;
+  .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $mover-size;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+.wrapper {
+  background-color: var(--brand-color-lightgrey);
+}
+
+.recommended {
+  @include wrapperDesktop;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .title {
+    margin-bottom: 24px;
+  }
+  .grid {
+    display: grid;
+    grid-auto-columns: 255px;
+    grid-template-rows: minmax(255px, auto);
+    grid-auto-flow: column;
+    justify-content: space-between;
+    min-height: 255px;
+  }
+}

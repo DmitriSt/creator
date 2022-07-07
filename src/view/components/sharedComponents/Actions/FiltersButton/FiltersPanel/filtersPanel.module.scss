@@ -1,0 +1,30 @@
+.filters {
+  width: 400px;
+  position: absolute;
+  box-shadow: 0 4px 4px #AEBEC8;
+  color: #000;
+  background-color: #FFF;
+  padding: 20px;
+  left: -20px;
+  .toggles {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+    .toggle {
+      display: flex;
+      align-items: center;
+      width: 33%;
+    }
+  }
+  .sliders {
+    padding: 0 16px;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      .description {
+        flex-shrink: 0;
+        color: #657176;
+      }
+    }
+  }
+}

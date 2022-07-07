@@ -1,0 +1,93 @@
+@import '../../../styles/vars';
+
+.colorizer {
+  .color {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: .1s;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px #AEBEC8;
+    cursor: pointer !important;
+  }
+  .bubble_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $top-layer;
+    cursor: default;
+    .bubble {
+      display: flex;
+      justify-content: flex-start;
+      background-color: #FFFFFF;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 240px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px #aebec8;
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        z-index: 1;
+        right: 100%;
+      }
+      &:before {
+        bottom: 50%;
+        background:
+          radial-gradient(circle, transparent 70%, #fff 80%) bottom right/200% 200%,
+          radial-gradient(circle, transparent 70%, #aebec8 75%) bottom right/200% 200%;
+      }
+      &:after {
+        top: 50%;
+        background:
+          radial-gradient(circle, transparent 70%, #fff 80%) top right/200% 200%,
+          radial-gradient(circle, transparent 70%, #aebec8 75%) top right/200% 200%;
+      }
+      &.right:before,
+      &.right:after {
+        left: 100%;
+      }
+      &.top:before,
+      &.top:after {
+        top: unset;
+        bottom: 100%;
+      }
+      &.right:before {
+        bottom: 50%;
+        background:
+          radial-gradient(circle, transparent 70%, #fff 80%) bottom left/200% 200%,
+          radial-gradient(circle, transparent 70%, #aebec8 75%) bottom left/200% 200%;
+      }
+      &.right:after {
+        top: 50%;
+        background:
+          radial-gradient(circle, transparent 70%, #fff 80%) top left/200% 200%,
+          radial-gradient(circle, transparent 70%, #aebec8 75%) top left/200% 200%;
+      }
+      &.top:before {
+        left: 50%;
+        background:
+          radial-gradient(circle, transparent 70%, #fff 80%) bottom left/200% 200%,
+          radial-gradient(circle, transparent 70%, #aebec8 75%) bottom left/200% 200%;
+      }
+      &.top:after {
+        right: 50%;
+        background:
+          radial-gradient(circle, transparent 70%, #fff 80%) bottom right/200% 200%,
+          radial-gradient(circle, transparent 70%, #aebec8 75%) bottom right/200% 200%;
+      }
+    }
+  }
+}

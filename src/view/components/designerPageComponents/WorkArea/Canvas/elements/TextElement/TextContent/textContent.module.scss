@@ -1,0 +1,12 @@
+.editable {
+  width: 100%;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+  word-wrap: break-word;
+
+  *:focus,
+  *:focus-visible {
+    outline: inherit;
+  }
+}

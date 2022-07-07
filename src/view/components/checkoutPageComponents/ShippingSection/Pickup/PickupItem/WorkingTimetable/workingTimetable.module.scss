@@ -1,0 +1,22 @@
+@import '../../../../../../styles/mixins.scss';
+@import '../../../../../../styles/colors.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 12px;
+  line-height: 21px;
+  color: $gray-text;
+  @include paragraph;
+  .line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .day {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}

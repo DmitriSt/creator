@@ -1,0 +1,24 @@
+@import '../../../../../styles/colors';
+
+
+.wrapper {
+  position: relative;
+}
+.disabled_dropdown {
+  pointer-events: none;
+  opacity: .5;
+}
+.icon_wrapper {
+  width: 40px;
+  min-width: 40px;
+  stroke: var(--brand-color);
+  cursor: pointer;
+}
+.rotated {
+  transform: rotate(180deg);
+}
+
+.disabled_icon {
+  pointer-events: none;
+  opacity: .5;
+}

@@ -1,0 +1,39 @@
+﻿@import '../../../styles/colors';
+
+.wrapper {
+  .text {
+    font-size: 12px;
+    color: $gray-text;
+    margin-left: 15px;
+  }
+}
+.area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 350px;
+  height: 208px;
+  background-color: var(--brand-color-lightgrey);
+  margin-top: 20px;
+  & > div {
+    padding-top: 0;
+    img {
+      width: 90px;
+      height: 60px;
+    }
+    button {
+      min-width: 133px;
+    }
+  }
+}
+.side {
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+.side_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

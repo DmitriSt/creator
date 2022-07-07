@@ -1,0 +1,29 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+.wrapper {
+  @include wrapperDesktop;
+}
+.themes {
+  position: relative;
+  width: 100%;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a5a5a577;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.bottomLoaderWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 30px;
+}

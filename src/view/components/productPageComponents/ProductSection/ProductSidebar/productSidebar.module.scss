@@ -1,0 +1,22 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/sizes';
+
+.sidebar {
+  padding-left: 30px;
+  border-left: 1px solid $brand-color-light;
+  width: 348px;
+  a {
+    text-decoration: none;
+  }
+  .title {
+    margin-bottom: 24px;
+  }
+}
+
+.button {
+  width: 100%;
+  margin-bottom: 20px;
+  & svg {
+    fill: var(--brand-color-lightgrey); 
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/sizes';
+
+.wrapper {
+  position: relative;
+}
+
+.product {
+  width: 730px;
+  border-right: 1px solid $brand-color-light;
+  .title {
+    margin-bottom: 27px;
+  }
+  .slider {
+    width: 445px;
+  }
+  .preview {
+    display: flex;
+    .properties {
+      margin: 0 30px;
+      font-size: 14px;
+    }
+  }
+}
+
+.subtext {
+  width: 445px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+}

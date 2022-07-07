@@ -1,0 +1,19 @@
+.dropdown {
+  width: 230px;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 0;
+  justify-content: flex-end;
+  span:first-child {
+    padding-right: 15px;
+  }
+  &:hover {
+    box-shadow: none;
+  }
+  button {
+    justify-content: flex-start;
+  }
+  span:last-child {
+    padding-right: 15px;
+  }
+}

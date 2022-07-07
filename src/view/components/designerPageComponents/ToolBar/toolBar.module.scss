@@ -1,0 +1,58 @@
+@import '../../../styles/mixins';
+
+.toolbar {
+  @include unselectable;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  font-size: 12px;
+  font-family: 'MerriweatherSans', sans-serif;
+  color: #7e898e;
+  .stepper {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 165px;
+    box-sizing: border-box;
+    height: inherit;
+    padding: 0 20px;
+    .step {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      opacity: 1;
+      svg {
+        margin-right: 10px;
+      }
+      &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        cursor: default;
+      }
+    }
+  }
+  .actions {
+    height: 100%;
+    img {
+      max-height: 26px;
+    }
+  }
+  .switchers {
+    margin-left: auto;
+    display: flex;
+    height: inherit;
+    padding: 0 20px;
+    & > * {
+      margin-right: 30px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

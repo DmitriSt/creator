@@ -1,0 +1,26 @@
+@import '../../../../../../styles/colors';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .delivery_block {
+    width: 100%;
+    font-weight: bold;
+  }
+  .price {
+    display: inline-block;
+    margin-left: 3px;
+    color: $counter-color;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../../../../styles/colors';
+
+.container {
+  cursor: pointer;
+  width: 132px;
+  .card {
+    display: block;
+    width: 132px;
+    max-height: 77px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: contain;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+  }
+  .checked {
+    outline: 2px solid var(--brand-color);
+    outline-offset: 4px;
+  }
+  .name {
+    display: block;
+    text-align: center;
+    margin: 8px 0 20px 0;
+    font-size: 12px;
+    color: $gray-text;
+    font-family: OpenSans;
+  }
+  .active {
+    color: initial;
+  }
+}

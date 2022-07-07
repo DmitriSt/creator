@@ -1,0 +1,29 @@
+.zoom {
+  .swiper-pagination {
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 11px;
+      width: 12px;
+      height: 42px;
+      background: url('../../../../../../../assets/images/slider/arrow.svg') no-repeat center center;
+    }
+  }
+
+  .swiper-button-next:after {
+    transform: rotate(180deg);
+  }
+}

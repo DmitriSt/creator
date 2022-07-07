@@ -1,0 +1,28 @@
+@import '../../../styles/colors';
+
+.wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bullet {
+  display: inline-block;
+  margin: 0 2.5px;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.slide {
+  height: unset;
+}
+
+.bullet_active {
+  background-color: #fff;
+}

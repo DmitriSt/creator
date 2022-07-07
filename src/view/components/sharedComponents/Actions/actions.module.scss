@@ -1,0 +1,81 @@
+@import '../../../styles/vars';
+@import '../../../styles/mixins';
+
+.actions {
+  @include unselectable;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 12px;
+  font-family: 'MerriweatherSans', sans-serif;
+  color: #7e898e;
+  max-height: inherit;
+}
+
+$lineHeight: 26.5px;
+
+.selection {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  max-height: inherit;
+  .title {
+    line-height: $lineHeight;
+    padding-left: 20px;
+    border-left: 1px solid #7e898e;
+  }
+  .placeholder {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    max-height: inherit;
+    box-sizing: border-box;
+    img {
+      display: block;
+      max-height: inherit;
+      overflow: hidden;
+      border-radius: 2px;
+      border: 1px solid #00000011;
+      box-sizing: border-box;
+    }
+    .qr {
+      outline: 2px solid #000;
+      outline-offset: -1px;
+    }
+    .text {
+      line-height: $lineHeight;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 60px;
+      white-space: nowrap;
+      font-size: inherit !important;
+    }
+    .color {
+      width: 59px;
+      height: 100%;
+      max-height: inherit;
+      border-radius: 2px;
+      border: 1px solid #00000011;
+      box-sizing: border-box;
+    }
+  }
+  .name {
+    padding-right: 10px;
+    color: #162630;
+  }
+}
+
+.toolsWrapper {
+  position: relative;
+  height: inherit;
+  padding-right: 10px;
+  .tools {
+    height: inherit;
+    display: flex;
+  }
+  .disabled {
+    pointer-events: none;
+    opacity: .5;
+  }
+}
+

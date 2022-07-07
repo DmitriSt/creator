@@ -1,0 +1,40 @@
+@import '../../../styles/colors';
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+
+.wrapper {
+  padding: $token 0;
+}
+.products_wrapper {
+  @include wrapperDesktop;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.map_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-gap: $token;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.element_wrapper {
+  cursor: pointer;
+}
+.image_block {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.title_block {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}

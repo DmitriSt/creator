@@ -1,0 +1,19 @@
+@import '../../../styles/colors';
+
+
+.wrapper {
+  max-width: 255px;
+  width: 100%;
+}
+.items {
+  margin: 8px 0 10px 0;
+  letter-spacing: -0.02em;
+}
+.item {
+  span {
+    line-height: 32px;
+    &:last-child {
+      font-weight: bold;
+    }
+  }
+}

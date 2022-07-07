@@ -1,0 +1,112 @@
+﻿.popup {
+    border: 1px solid silver;
+    background-color: white;
+    text-align: center;
+    width: 270px;
+    height: 250px;
+    position: absolute;
+    z-index: 4000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    background-color: #dae0e9;
+}
+
+.fullname {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.username {
+    text-transform: lowercase;
+    font-size: 0.95em;
+}
+
+.signout, .signin {
+    position: absolute;
+    right: 16px;
+    top: 6px;
+}
+
+.profile, .register {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    width: 100%;
+}
+
+.picture_small, .picture_medium {
+    overflow: hidden;
+    border-radius: 60%;
+    border: 1px silver solid;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.picture_small:hover, .picture_medium:hover {
+    border: 1px blue solid;
+}
+
+.picture_small {
+    width: 30px !important;
+    height: 30px !important;
+    cursor: pointer;
+}
+
+.picture_medium {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.identity_provider {
+    position: absolute;
+    top: 95px;
+    left: 100px;
+
+    img {
+        width: 20px;
+    }
+}
+
+.signout, .signin, .profile, .register {
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: blue;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: black;
+    }
+}
+
+.create_profile {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #b4d0e0;
+
+    .subaction {
+        margin-top: -4px;
+    }
+
+    .action {
+        font-weight: bold;
+        color: #FFF;
+        text-decoration: underline;
+    }
+
+    .action:hover {
+        color: lightblue;
+        cursor: pointer;
+    }
+}

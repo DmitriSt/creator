@@ -1,0 +1,64 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/colors';
+@import '../../../../styles/sizes';
+@import '../../../../styles/vars';
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000077;
+  z-index: $top-layer;
+  overflow: hidden;
+}
+
+.popup {
+  width: 900px;
+  margin: auto;
+  min-height: 520px;
+  background-color: var(--brand-color-lightgrey);
+  padding: 50px 65px;
+  box-sizing: border-box;
+  font-size: 18px;
+  position: relative;
+  .close {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: url('../../../../assets/images/close_dark.svg') no-repeat center center #fff;
+    background-size: 50%;
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    cursor: pointer;
+  }
+  .title_section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .title {
+      font-size: 36px;
+      max-width: 40%;
+      @include truncate(2);
+      font-family: OpenSans;
+    }
+    .controls {
+      max-width: 60%;
+    }
+    .button {
+      width: 200px;
+    }
+    .link {
+      margin-right: 30px;
+      color: var(--brand-color);
+      text-decoration: underline;
+    }
+  }
+  .description {
+    margin: 22px 0 27px 0;
+    font-family: OpenSans;
+  }
+}

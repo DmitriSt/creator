@@ -1,0 +1,18 @@
+@import '../../../../../styles/colors';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+  &.checked {
+    background-color: var(--brand-color);
+    color: #FFF;
+    opacity: 1;
+  }
+}

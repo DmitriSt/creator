@@ -1,0 +1,18 @@
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+.wrapper {
+  @include wrapperDesktop;
+}
+.section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 28px 0 115px 0;
+}
+.link {
+  color: var(--brand-color);
+  text-decoration: underline;
+  font-size: 14px;
+}

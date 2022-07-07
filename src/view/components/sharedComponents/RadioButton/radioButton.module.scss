@@ -1,0 +1,45 @@
+@import '../../../styles/colors';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  position: relative;
+  & p {
+    padding: 0;
+    margin: 0;
+  }
+  input {
+    display: none;
+    &:checked {
+      & ~ .outside_circle > .inside_circle {
+        background-color: var(--brand-color);
+      }
+    }
+  }
+  .label {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.outside_circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  background-color: var(--brand-color-lightgrey);
+  border-radius: 50%;
+}
+.inside_circle {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+}

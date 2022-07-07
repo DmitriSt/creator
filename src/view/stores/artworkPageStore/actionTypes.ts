@@ -1,0 +1,6 @@
+enum ActionTypesCart {
+  INIT_ARTWORK_PAGE_SETUP = 'INIT_ARTWORK_PAGE_SETUP',
+  UPDATE_ACTIVE_PRODUCT = 'UPDATE_ACTIVE_PRODUCT',
+}
+
+export default ActionTypesCart;

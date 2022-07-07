@@ -1,0 +1,58 @@
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
+
+.wrapper {
+  width: 180px;
+  height: 48px;
+  box-shadow: 0 4px 8px 0 rgba(101, 113, 118, 0.2);
+  position: relative;
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(101, 113, 118, 0.2);
+  }
+}
+
+.selected_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.hovered {
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color-lightgrey);
+  }
+  
+}
+.item {
+  @include unselectable;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border: 0;
+  outline: none;
+  background-color: #fff;
+  justify-content: space-between;
+  line-height: 48px;
+  padding: 0 20px;
+  cursor: pointer;
+  .title {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 20px;
+  }
+  & svg {
+    width: 31px;
+    height: 20px;
+    margin-right: 9px;
+  }
+  .rotated {
+    transform: rotate(180deg);
+  }
+}
+.inactive {
+  color: $gray-text;
+}

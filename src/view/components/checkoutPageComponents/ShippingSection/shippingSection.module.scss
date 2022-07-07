@@ -1,0 +1,29 @@
+@import '../../../styles/colors';
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+.radio_button {
+  input:checked ~ p {
+    font-weight: bold;
+  }
+  &:first-child {
+    margin-right: 20px;
+  }
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 25px 0 40px;
+}
+.choosen_pickup {
+  justify-content: flex-end;
+}
+.choosen_shipping {
+  justify-content: space-between;
+}

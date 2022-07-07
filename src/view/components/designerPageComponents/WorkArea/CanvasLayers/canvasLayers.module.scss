@@ -1,0 +1,130 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/vars';
+
+.list {
+  min-width: 160px;
+  padding: 0 20px;
+}
+
+.element {
+  display: flex;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: 0 8px;
+  background: rgba(255,255,255, 0.5);
+  border: 1px solid #EEF3F5;
+  transition: .2s;
+
+  &:hover {
+    background: #ffffff;
+    transition: .2s;
+  }
+
+  &.active {
+    filter: drop-shadow(0px 4px 18px rgba(0, 0, 0, 0.15));
+  }
+}
+
+.elementName {
+  @include unselectable;
+  font-size: 12px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  color: #7E898E;
+}
+
+.position {
+  @include unselectable;
+  font-size: 12px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  color: #7E898E;
+  cursor: default;
+
+  &.header {
+    padding-top: 20px;
+    line-height: 1;
+  }
+}
+
+.bottom {
+  padding-bottom: 20px;
+}
+
+.close {
+  min-width: 20px;
+  min-height: inherit;
+  background-color: rgba(101, 113, 118, 0.3);
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  & > div {
+    cursor: pointer;
+  }
+}
+
+.elementInfo {
+  display: flex;
+  align-items: center;
+
+  &.disabled {
+    .elementName {
+      opacity: .5;
+      cursor: default;
+    }
+  }
+}
+
+.elementPlaceholder {
+  @include unselectable;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+
+  .color {
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px #aebec8;
+  }
+
+  img {
+    width: 32px;
+  }
+
+  .image {
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 32px;
+    white-space: nowrap;
+    line-height: 31px;
+    font-size: 10px !important;
+  }
+}
+
+.elements {
+  max-height: 400px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.moveIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: default;
+  }
+}

@@ -1,0 +1,111 @@
+@import 'colors';
+@import 'mixins';
+
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  @include defaultFont;
+  &.grabbing,
+  &.grabbing * {
+    cursor: grabbing !important;
+  }
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+pre,
+button,
+input[type='button'],
+input[type='text'] {
+  @include defaultFont;
+}
+
+input[type='text'] {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 0 20px 0 0;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 22px;
+  &::placeholder {
+    color: #000;
+    opacity: 0.5;
+  }
+}
+
+
+h1 {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'MerriweatherSans', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.section_title {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'MerriweatherSans', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.accent_color {
+  color: var(--brand-color);
+}
+
+.accent_background {
+  background-color: var(--brand-color);
+}
+
+.svg-path-stroke {
+  path {
+    stroke: var(--brand-color);
+  }
+}
+
+.svg-path-fill {
+  path {
+    fill: var(--brand-color);
+  }
+}
+
+.app {
+  height: 100vh;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+:root {
+  --brand-color: #42708a;
+  --raw-brand-color: 66, 112, 138;
+  --brand-color-lightgrey: rgba(var(--raw-brand-color), 0.08);
+  --brand-color-darkish: rgb(22, 38, 48);
+}

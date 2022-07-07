@@ -1,0 +1,15 @@
+.social_container {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  li {
+    a {
+      img {
+        height: 21px;
+      }
+    }
+  }
+}

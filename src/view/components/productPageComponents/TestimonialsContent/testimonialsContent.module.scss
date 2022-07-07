@@ -1,0 +1,28 @@
+@import '../../../styles/colors';
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+
+.testimonials {
+  @include wrapperDesktop;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  .title {
+    margin-bottom: 32px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background: url('../../../assets/images/productPage/quotes.svg') no-repeat center center;
+      width: 47px;
+      height: 41px;
+      position: absolute;
+      left: -70px;
+      top: -50%;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $token;
+  }
+}

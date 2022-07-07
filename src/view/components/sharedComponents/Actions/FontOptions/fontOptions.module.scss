@@ -1,0 +1,25 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/colors';
+
+.options {
+  display: flex;
+  height: inherit;
+  font-family: 'MerriweatherSans', sans-serif;
+  font-size: 12px;
+  .toggles {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 10px;
+    & > div:not(:last-child) {
+      margin-right: 5px;
+    }
+    .italic {
+      font-style: italic;
+    }
+    .underline {
+      text-decoration-line: underline;
+    }
+  }
+}

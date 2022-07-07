@@ -1,0 +1,15 @@
+@import '../../../styles/mixins';
+
+.section {
+  @include wrapperDesktop;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title {
+    padding-top: 38px;
+    padding-bottom: 32px;
+  }
+  .button {
+    width: 280px;
+  }
+}

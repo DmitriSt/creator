@@ -1,0 +1,12 @@
+@import '../../../../styles/colors.scss';
+
+.header {
+  color: $gray-text;
+  font-size: 14px;
+  line-height: 48px;
+  border-bottom: 3px solid #7E898E;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/mixins';
+
+.wrapper {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(101, 113, 118, 0.2);
+  background-color: #fff;
+  border-top: 1px solid var(--brand-color-lightgrey);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 200;
+  box-sizing: border-box;
+  max-height: 200px;
+  height: auto;
+  overflow-y: auto;
+  overflow: overlay;
+  @include scrollbarWithIndent($brand-color-light);
+}

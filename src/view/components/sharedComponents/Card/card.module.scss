@@ -1,0 +1,50 @@
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  box-shadow: 0px 70px 80px -65px rgba(0, 0, 0, 0.2);
+  &:hover {
+    box-shadow: 0px 70px 80px -65px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.card {
+  width: 255px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  height: 100%;
+
+  &:hover:after {
+    opacity: 0.5;
+  }
+  .image {
+    display: block;
+    height: 136px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  .content {
+    padding: 20px;
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 18px;
+      color: var(--brand-color);
+    }
+    .description {
+      font-size: 12px;
+      opacity: 0.5;
+      margin: 6px 0 20px 0;
+    }
+    .group {
+      display: flex;
+      align-items: center;
+      border-top: 1px solid $brand-color-light;
+      padding-top: 20px;
+    }
+  }
+}

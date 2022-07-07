@@ -1,0 +1,57 @@
+@import './sizes';
+
+.carousel {
+  max-width: $desktop-size + 4 * $token;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+
+  .swiper-container {
+    width: 100%;
+    max-width: $desktop-size;
+    overflow: visible;
+    position: relative;
+
+    @media screen and (max-width: $carousel-triple-size) {
+      max-width: calc(100% - 4 * #{$token});
+    }
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin: 0;
+    width: 2 * $token;
+    height: 100%;
+    top: 0;
+    background-color: #fff;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 12px;
+      height: 180px;
+      background: url('../assets/images/slider/arrow.svg') no-repeat center center;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -2 * $token;
+  }
+
+  .swiper-button-next {
+    right: -2 * $token;
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.swiper-container .swiper-wrapper {
+  height: auto;
+}

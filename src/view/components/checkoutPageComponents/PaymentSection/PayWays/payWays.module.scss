@@ -1,0 +1,38 @@
+.card_icons,
+.pay_ways {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.img_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 22px;
+  border-radius: 1px;
+  background-color: #F9F9F9;
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+}
+.radio_button {
+  min-width: 125px;
+  input:checked ~ p {
+    font-weight: bold;
+  }
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.card_info {
+  display: grid;
+  grid-template-columns: 185px 145px;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+.long_field {
+  grid-column: 1 / 3;
+}

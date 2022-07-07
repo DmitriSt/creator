@@ -1,0 +1,45 @@
+@import '../../../styles/colors';
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+
+.wrapper {
+  background-color: var(--brand-color-lightgrey);
+}
+
+.prod_wrapper {
+  @include wrapperDesktop;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.logo_slogan_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 51.5%;
+  height: 100%;
+}
+.logo_wrapper {
+  cursor: pointer;
+}
+.slogan {
+  margin: 0;
+  font-style: italic;
+  color: $gray-text;
+}
+.secure_elements_container {
+  width: 313px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px;
+}
+.norton {
+  margin-bottom: 2px;
+}
+.secure_element {
+  object-fit: contain;
+  width: 68px;
+  height: 37px;
+}

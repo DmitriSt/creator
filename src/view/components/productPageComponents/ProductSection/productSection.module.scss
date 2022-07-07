@@ -1,0 +1,10 @@
+@import '../../../styles/colors';
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+
+.section {
+  @include wrapperDesktop;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}

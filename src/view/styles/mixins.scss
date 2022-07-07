@@ -1,0 +1,136 @@
+@import 'sizes';
+
+@mixin defaultFont {
+  font-family: 'MerriweatherSans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin wrapperDesktop {
+  max-width: $desktop-size;
+  margin: 0 auto;
+  padding: 0 $token;
+}
+
+@mixin toolbarHiddenShadow($dir) {
+  $height: 25px;
+  content: "";
+  display: block;
+  position: absolute;
+  @if $dir == left {
+    left: 100%;
+    box-shadow: -2px 0 4px #aebec8;
+  } @else if $dir == right {
+    right: 100%;
+    box-shadow: 2px 0 4px #aebec8;
+  }
+  top: calc(50% - #{$height} / 2);
+  height: $height;
+  width: 1px;
+  pointer-events: none;
+}
+
+@mixin scrollbar {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    position: relative;
+  }
+  &::-webkit-scrollbar-track {
+    position: relative;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    opacity: 0.5;
+    border-radius: 5px;
+  }
+}
+
+@mixin scrollbarWithIndent($color: darkgrey) {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 15px;
+    position: relative;
+  }
+  &::-webkit-scrollbar-track {
+    position: relative;
+    margin: 12px 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    border-top: 4px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 4px solid transparent;
+    background-clip: padding-box;
+    background-color: $color;
+    opacity: 0.5;
+  }
+}
+
+@mixin unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin selectable {
+  -webkit-touch-callout: default;
+  -webkit-user-select: all;
+  -khtml-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
+@mixin selectableText {
+  -webkit-touch-callout: default;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+@mixin paragraph {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@mixin truncate ($lines: 1) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if ($lines > 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    white-space: unset;
+    word-break: break-all;
+  }
+}
+
+@mixin shadow() {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: calc(100% - 60px);
+    z-index: -1;
+    background: linear-gradient(270deg, rgba(20, 24, 30, 0) 7.84%, #252930 49.01%, rgba(87, 91, 96, 0.1) 92.16%);
+    opacity: 0.2;
+    filter: blur(32px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    @content;
+  }
+}

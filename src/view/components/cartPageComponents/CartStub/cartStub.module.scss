@@ -1,0 +1,29 @@
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+.wrapper {
+  @include wrapperDesktop;
+  @include paragraph;
+  font-family: 'MerriweatherSans', serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 50px;
+
+  padding: 0;
+  .title {
+    font-size: 32px;
+    margin: 60px 0 18px 0;
+  }
+  .text {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  button {
+    width: 170px;
+  }
+  .image {
+    width: 155px;
+    height: 135px;
+  }
+}

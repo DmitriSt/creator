@@ -1,0 +1,70 @@
+@import '../../../../../../styles/vars';
+@import '../../../../../../styles/colors';
+
+.crop {
+  $padding: 4px;
+  position: absolute;
+  left: -$padding;
+  top: -$padding;
+  right: 0;
+  bottom: 0;
+  padding: $padding;
+  background-position: top, left, bottom, right;
+  background-size: 8px 1px, 1px 8px;
+  background-repeat: repeat-x, repeat-y;
+  z-index: $top-layer;
+  pointer-events: none;
+}
+
+$offset: 4px;
+$linesColor: rgba(255, 255, 255, 0.6);
+
+.proportional {
+  pointer-events: auto;
+  .angle {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    &:active {
+      cursor: grabbing;
+    }
+  }
+  .angle:nth-child(1) {
+    left: -$offset;
+    top: -$offset;
+  }
+  .angle:nth-child(2) {
+    right: -$offset;
+    top: -$offset;
+    transform: rotate(90deg);
+  }
+  .angle:nth-child(3) {
+    right: -$offset;
+    bottom: -$offset;
+    transform: rotate(180deg);
+  }
+  .angle:nth-child(4) {
+    left: -$offset;
+    bottom: -$offset;
+    transform: rotate(270deg);
+  }
+}
+
+.hor_lines {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  border-top: 1px solid $linesColor;
+  border-bottom: 1px solid $linesColor;
+}
+
+.ver_lines {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  border-left: 1px solid $linesColor;
+  border-right: 1px solid $linesColor;
+}

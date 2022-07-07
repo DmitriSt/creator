@@ -1,0 +1,24 @@
+@import '../../../styles/colors';
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+
+.wrapper {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(101, 113, 118, 0.2);
+  height: 48px;
+}
+
+.navigation_elements {
+  @include wrapperDesktop;
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  position: relative;
+  font-size: 12px;
+  .content_wrapper {
+    margin-right: 22px;
+  }
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../../../../../styles/colors';
+@import '../../../../../../styles/mixins';
+
+.settings {
+  @include paragraph;
+  label:not(:first-of-type) {
+    margin-top: 20px;
+  }
+}
+.title {
+  color: $gray-text;
+  font-size: 12px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+}

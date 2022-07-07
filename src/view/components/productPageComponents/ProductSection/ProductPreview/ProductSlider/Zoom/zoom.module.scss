@@ -1,0 +1,42 @@
+.container {
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.zoom_wrapper {
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  position: relative;
+  cursor: pointer;
+  .zoom_block {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.size {
+  position: absolute;
+  top: 0;
+  right: -7px;
+  background-color: #ce5353;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  font-family: 'Merriweather', serif;
+  font-size: 10px;
+  line-height: 18px;
+}

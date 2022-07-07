@@ -1,0 +1,80 @@
+@import '../../../../styles/sizes';
+@import '../../../../styles/mixins';
+
+// TODO remove when canvas-temp become unnecessary
+.temp {
+  pointer-events: none;
+  background-color: #00FF0044;
+  z-index: 9999;
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+
+  .canvas {
+    display: flex;
+    justify-content: center;
+    .contentLayer,
+    .editingLayer,
+    .selectorsLayer,
+    .activeWrapper {
+      display: block;
+      position: absolute;
+      transform: translateX(-50%);
+      top: 0;
+      left: 50%;
+    }
+
+    .activeWrapper {
+      top: -2px;
+      border: 2px solid #42708A;
+    }
+
+    .contentLayer {
+      background-color: transparent;
+      transform-origin: 0 0;
+      .bleed {
+        pointer-events: none;
+      }
+    }
+
+    .editingLayer {
+      overflow: visible;
+    }
+
+    .selectorsLayer {
+      pointer-events: none;
+      overflow: visible;
+    }
+  }
+}
+
+.grid {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-image: linear-gradient(
+      90deg,
+      #000 1%,
+      transparent 1%,
+      transparent 50%,
+      #000 50%,
+      #000 51%,
+      transparent 51%,
+      transparent 100%
+    ),
+    linear-gradient(
+      0deg,
+      #000 1%,
+      transparent 1%,
+      transparent 50%,
+      #000 50%,
+      #000 51%,
+      transparent 51%,
+      transparent 100%
+    );
+  background-size: 100px 100px;
+}

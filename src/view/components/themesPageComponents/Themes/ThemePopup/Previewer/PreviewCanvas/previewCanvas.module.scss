@@ -1,0 +1,18 @@
+@import '../../../../../../styles/colors';
+@import '../../../../../../styles/mixins';
+
+.canvas_section {
+  z-index: 0;
+  @include shadow {
+    bottom: -20px;
+    height: 60px;
+    opacity: 0.3;
+    top: unset;
+  }
+  .canvas {
+    display: block;
+    width: 608px;
+    height: 359px;
+    object-fit: cover;
+  }
+}

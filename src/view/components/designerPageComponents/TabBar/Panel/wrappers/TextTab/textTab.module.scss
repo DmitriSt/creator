@@ -1,0 +1,12 @@
+@import '../../../../../../styles/colors';
+
+.title {
+  font-size: 14px;
+  margin: 17px 0;
+  color: var(--brand-color-darkish);
+  font-weight: bold;
+}
+
+.content div {
+  cursor: grab;
+}

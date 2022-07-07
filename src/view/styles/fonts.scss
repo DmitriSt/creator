@@ -1,0 +1,663 @@
+@font-face {
+  font-family: 'MerriweatherSans';
+  src:
+          local('Merriweather Sans'),
+          url('../assets/fonts/MerriweatherSans-Light.ttf'),
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-Light.ttf'),
+          local('Arial');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  src:
+          local('Merriweather Sans'),
+          url('../assets/fonts/MerriweatherSans-LightItalic.ttf'),
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-LightItalic.ttf'),
+          local('Arial');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  src:
+          local('Merriweather Sans'),
+          url('../assets/fonts/MerriweatherSans.ttf'),
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans.ttf'),
+          local('Arial');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  src:
+          local('Merriweather Sans'),
+          url('../assets/fonts/MerriweatherSans-Italic.ttf'),
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-Italic.ttf'),
+          local('Arial');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  src:
+          local('Merriweather Sans'),
+          url('../assets/fonts/MerriweatherSans-Bold.ttf'),
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-Bold.ttf'),
+          local('Arial');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  src:
+          local('Merriweather Sans'),
+          url('../assets/fonts/MerriweatherSans-Bold-Italic.ttf'),
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-Bold-Italic.ttf'),
+          local('Arial');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src:
+          local('Merriweather'),
+          url('../assets/fonts/Merriweather-Light.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src:
+          local('Merriweather'),
+          url('../assets/fonts/Merriweather-LightItalic.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src:
+          local('Merriweather'),
+          url('../assets/fonts/Merriweather.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src:
+          local('Merriweather'),
+          url('../assets/fonts/Merriweather-Italic.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src:
+          local('Merriweather'),
+          url('../assets/fonts/Merriweather-Bold.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// designer text element fonts
+
+@font-face {
+  font-family: 'AlegreyaSC';
+  src:
+          local('Alegreya SC'),
+          url('../assets/fonts/AlegreyaSC.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSC';
+  src:
+          local('Alegreya SC'),
+          url('../assets/fonts/AlegreyaSC-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSC';
+  src:
+          local('Alegreya SC'),
+          url('../assets/fonts/AlegreyaSC-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AlegreyaSC';
+  src:
+          local('Alegreya SC'),
+          url('../assets/fonts/AlegreyaSC-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Amaranth';
+  src:
+          local('Amaranth'),
+          url('../assets/fonts/Amaranth.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amaranth';
+  src:
+          local('Amaranth'),
+          url('../assets/fonts/Amaranth-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amaranth';
+  src:
+          local('Amaranth'),
+          url('../assets/fonts/Amaranth-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Amaranth';
+  src:
+          local('Amaranth'),
+          url('../assets/fonts/Amaranth-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Asap';
+  src:
+          local('Asap'),
+          url('../assets/fonts/Asap.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Asap';
+  src:
+          local('Asap'),
+          url('../assets/fonts/Asap-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Asap';
+  src:
+          local('Asap'),
+          url('../assets/fonts/Asap-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Asap';
+  src:
+          local('Asap'),
+          url('../assets/fonts/Asap-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src:
+          local('Cabin'),
+          url('../assets/fonts/Cabin.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src:
+          local('Cabin'),
+          url('../assets/fonts/Cabin-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src:
+          local('Cabin'),
+          url('../assets/fonts/Cabin-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src:
+          local('Cabin'),
+          url('../assets/fonts/Cabin-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IstokWeb';
+  src:
+          local('Istok Web'),
+          url('../assets/fonts/IstokWeb.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IstokWeb';
+  src:
+          local('Istok Web'),
+          url('../assets/fonts/IstokWeb-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IstokWeb';
+  src:
+          local('Istok Web'),
+          url('../assets/fonts/IstokWeb-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IstokWeb';
+  src:
+          local('Istok Web'),
+          url('../assets/fonts/IstokWeb-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'JosefinSans';
+  src:
+          local('Josefin Sans'),
+          url('../assets/fonts/JosefinSans.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src:
+          local('Josefin Sans'),
+          url('../assets/fonts/JosefinSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src:
+          local('Josefin Sans'),
+          url('../assets/fonts/JosefinSans-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src:
+          local('Josefin Sans'),
+          url('../assets/fonts/JosefinSans-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JuliusSansOne';
+  src:
+          local('Julius Sans One'),
+          url('../assets/fonts/JuliusSansOne.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LobsterTwo';
+  src:
+          local('Lobster Two'),
+          url('../assets/fonts/LobsterTwo.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LobsterTwo';
+  src:
+          local('Lobster Two'),
+          url('../assets/fonts/LobsterTwo-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LobsterTwo';
+  src:
+          local('Lobster Two'),
+          url('../assets/fonts/LobsterTwo-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LobsterTwo';
+  src:
+          local('Lobster Two'),
+          url('../assets/fonts/LobsterTwo-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src:
+          local('Lora'),
+          url('../assets/fonts/Lora.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src:
+          local('Lora'),
+          url('../assets/fonts/Lora-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src:
+          local('Lora'),
+          url('../assets/fonts/Lora-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src:
+          local('Lora'),
+          url('../assets/fonts/Lora-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NewsCycle';
+  src:
+          local('News Cycle'),
+          url('../assets/fonts/NewsCycle.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NewsCycle';
+  src:
+          local('News Cycle'),
+          url('../assets/fonts/NewsCycle-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-LightItalic.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-Light.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-Italic.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-Bold.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+          local('Open Sans'),
+          url('../assets/fonts/OpenSans-Bold-Italic.ttf'),
+          local('Georgia'),
+          local('Times New Roman');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PassionOne';
+  src:
+          local('Passion One'),
+          url('../assets/fonts/PassionOne.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PassionOne';
+  src:
+          local('Passion One'),
+          url('../assets/fonts/PassionOne-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSansWeb';
+  src:
+          local('PT Sans'),
+          url('../assets/fonts/PTSans.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSansWeb';
+  src:
+          local('PT Sans'),
+          url('../assets/fonts/PTSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSansWeb';
+  src:
+          local('PT Sans'),
+          url('../assets/fonts/PTSans-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PTSansWeb';
+  src:
+          local('PT Sans'),
+          url('../assets/fonts/PTSans-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ApcReverse';
+  src:
+          local('Reverse_APC'),
+          url('../assets/fonts/ApcReverse.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ApcReverse';
+  src:
+          local('Reverse_APC'),
+          url('../assets/fonts/ApcReverse-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ApcReverse';
+  src:
+          local('Reverse_APC'),
+          url('../assets/fonts/ApcReverse-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+          local('Roboto'),
+          url('../assets/fonts/Roboto.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+          local('Roboto'),
+          url('../assets/fonts/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+          local('Roboto'),
+          url('../assets/fonts/Roboto-Bold-Italic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+          local('Roboto'),
+          url('../assets/fonts/Roboto-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src:
+          local('Roboto Slab'),
+          url('../assets/fonts/RobotoSlab.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src:
+          local('Roboto Slab'),
+          url('../assets/fonts/RobotoSlab-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoSlabLight';
+  src:
+          local('Roboto Slab'),
+          url('../assets/fonts/RobotoSlabLight.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoSlabLight';
+  src:
+          local('Roboto Slab'),
+          url('../assets/fonts/RobotoSlabLight-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}

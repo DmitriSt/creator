@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <base href="/">
+  <script>
+    try {
+      window.SERVER_DATA = __SERVER_DATA__;
+      var config = {
+        "baseUrl": '/',
+        "apiRoot": window.location.origin + '/'
+      };
+      if (window.SERVER_DATA && window.SERVER_DATA.Config) {
+        config = window.SERVER_DATA.Config;
+      }
+      document.head.innerHTML = document.head.innerHTML + "<base href='" + config.baseUrl + "' />";
+    } catch {}
+  </script>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="ePrintCreator" />
+  <title>ePrintCreator</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+</body>
+<script>
+  window.RenderApp(config);
+</script>
+</html>

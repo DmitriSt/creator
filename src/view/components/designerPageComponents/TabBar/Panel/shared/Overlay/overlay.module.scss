@@ -1,0 +1,25 @@
+@import '../../../../../../styles/vars';
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: $top-layer - 1;
+  padding: 10px;
+  overflow: hidden;
+  color: #FFF;
+  box-sizing: border-box;
+}
+
+.minimized {
+  width: calc(100% + 40px);
+  height: calc(100% + 10px);
+  left: -20px;
+}

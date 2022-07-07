@@ -1,0 +1,53 @@
+@import '../../../styles/colors';
+
+.wrap {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+.loader_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.custom_loader {
+  animation: spin 1s linear infinite;
+  .back {
+    stroke: var(--brand-color-lightgrey);
+  }
+  .spinner {
+    stroke: var(--brand-color);
+  }
+}
+
+.big {
+  width: 120px;
+  height: 120px;
+}
+
+.small {
+  width: 30px;
+  height: 30px;
+}
+
+.adaptive {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

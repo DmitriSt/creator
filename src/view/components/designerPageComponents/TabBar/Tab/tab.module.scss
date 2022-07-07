@@ -1,0 +1,43 @@
+@import '../../../../styles/mixins';
+
+.tab {
+  @include unselectable;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: inherit;
+  border-bottom: 1px solid #7e898e4c;
+  border-top: 1px solid #7e898e4c;
+  padding: 15px 0;
+  text-align: center;
+  color: #7e898e;
+  min-height: 80px;
+  font-family: 'MerriweatherSans', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  &:hover,
+  &.active {
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    z-index: 2;
+    svg {
+      $iconColor: #ce5353;
+      path {
+        fill: $iconColor;
+        stroke: $iconColor;
+      }
+      rect {
+        stroke: $iconColor;
+      }
+    }
+    .title {
+      font-weight: bold;
+    }
+  }
+  .title {
+    padding-top: 5px;
+  }
+}

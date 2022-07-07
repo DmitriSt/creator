@@ -1,0 +1,28 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/mixins.scss';
+
+.button,
+.wrapper {
+  width: 100%;
+}
+.wrapper {
+  position: relative;
+  @include paragraph;
+}
+.disabled {
+  opacity: 0.3;
+  cursor: default;
+  &:hover {
+    opacity: 0.3;
+  }
+}
+.error {
+  position: absolute;
+  width: 100%;
+  padding: 0 10px;
+  top: calc(100% + 15px);
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  color: $counter-color;
+}

@@ -1,0 +1,25 @@
+@import '../../../styles/colors';
+
+.wrapper {
+  min-width: 210px;
+  margin: 25px 0;
+}
+.items {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+}
+.item {
+  span {
+    line-height: 32px;
+  }
+  &:last-child {
+    font-weight: bold;
+    span {
+      line-height: 32px;
+      &:last-child {
+        color: $counter-color;
+      }
+    }
+  }
+}

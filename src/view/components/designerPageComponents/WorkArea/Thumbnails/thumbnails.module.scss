@@ -1,0 +1,69 @@
+@import '../../../../styles/mixins.scss';
+
+.thumbnails {
+  @include unselectable;
+  @include scrollbar;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0 30px;
+  box-sizing: border-box;
+  padding: 5px;
+  overflow-y: auto;
+}
+.thumbnailWrap {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 44px;
+  }
+}
+.thumbnailCanvases {
+  display: flex;
+  justify-content: center;
+
+  span {
+    position: relative;
+    padding-right: 16px;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: #657176;
+
+    &.nameActive {
+      color: #000000;
+      font-weight: bold;
+    }
+
+    &:before {
+      content: '';
+      width: 1px;
+      height: 19px;
+      position: absolute;
+      top: 50%;
+      right: 7px;
+      background: #657176;
+      transform: translateY(-50%) rotate(15deg);
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+.sticky {
+  position: sticky;
+  top: 40px;
+  right: 30px;
+  padding: 5px;
+  overflow-y: initial;
+}
+.bgImage {
+  position: relative;
+  left: 50%;
+  width: auto;
+  transform: translateX(-50%);
+}

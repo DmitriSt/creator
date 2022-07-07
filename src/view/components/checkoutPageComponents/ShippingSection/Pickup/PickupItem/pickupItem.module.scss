@@ -1,0 +1,25 @@
+@import '../../../../../styles/colors.scss';
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 235px 200px 144px;
+  column-gap: 35px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.fee {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 12px;
+  line-height: 21px;
+  color: $gray-text;
+}
+.price {
+  font-weight: bold;
+}
+.radio_button {
+  font-weight: bold;
+}

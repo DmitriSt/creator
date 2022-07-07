@@ -1,0 +1,61 @@
+@import '../../../styles/colors';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 0 30px 0;
+  width: 729px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $brand-color-light;
+  font-size: 14px;
+  color: $gray-text;
+  letter-spacing: -0.03em;
+  width: 100%;
+  padding-bottom: 7px;
+}
+.title_text {
+  line-height: 28px;
+}
+.title_colored {
+  color: var(--brand-color);
+}
+.step {
+  text-align: center;
+  font-size: 18px;
+  width: 20px;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250%;
+    height: 200%;
+  }
+  path {
+    stroke: var(--brand-color);
+  }
+}
+.button {
+  width: 130px;
+}
+.disabled {
+  opacity: 0.3;
+  cursor: default;
+  &:hover {
+    opacity: 0.3;
+  }
+}

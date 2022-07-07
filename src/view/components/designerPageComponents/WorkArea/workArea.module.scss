@@ -1,0 +1,39 @@
+@import '../../../styles/mixins';
+
+.workArea {
+  height: calc(100% - 85px);
+  padding: 40px 0 45px 30px;
+  position: relative;
+
+  * {
+    @include unselectable;
+  }
+
+  .canvasSection {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    height: 100%;
+    box-sizing: border-box;
+
+    .canvas {
+      width: 100%;
+    }
+    .content_wrapper {
+      width: min-content;
+      margin: 0 auto;
+      padding-right: 60px;
+    }
+    .content_wrapper_adaptive {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+  .zoomed {
+    height: auto;
+  }
+}
+.zoomed {
+  height: auto;
+}

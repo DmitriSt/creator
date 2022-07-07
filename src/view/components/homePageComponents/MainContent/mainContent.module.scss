@@ -1,0 +1,71 @@
+@import '../../../styles/colors';
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+
+.wrapper {
+  padding: 2 * $token 0;
+}
+.content_wrapper {
+  @include wrapperDesktop;
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+.image_block_wrapper {
+  width: 730px;
+  height: 400px;
+  min-width: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.describe_block_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 330px;
+  padding-left: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.new_mark {
+  background-color: $counter-color;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 2px 4px;
+  text-transform: uppercase;
+}
+.title {
+  margin: 0 0 13px 0;
+  font-family: 'Merriweather', serif;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 48px;
+}
+.subtitle {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  width: 330px;
+  padding-bottom: 33px;
+}
+.button {
+  font-family: OpenSans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  width: 220px;
+  padding: 0;
+  letter-spacing: -0.02em;
+}

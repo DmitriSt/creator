@@ -1,0 +1,14 @@
+@import '../../../styles/mixins';
+
+.wrapper {
+  @include wrapperDesktop;
+}
+.section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.column_right {
+  width: 255px;
+}

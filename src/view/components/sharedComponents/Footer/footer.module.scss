@@ -1,0 +1,59 @@
+@import '../../../styles/colors';
+@import '../../../styles/sizes';
+@import '../../../styles/mixins';
+
+.container {
+  background-color: var(--brand-color);
+  position: sticky;
+  top: 100%;
+}
+.wrapper {
+  @include wrapperDesktop;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 45px;
+}
+
+.links {
+  display: flex;
+  margin-left: 40px;
+  text-decoration: underline;
+  font-family: OpenSans;
+  a {
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.last_link {
+  margin-left: 20px;
+}
+.socials_wrapper {
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.share {
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding-right: 12px;
+  margin-bottom: 4px;
+}

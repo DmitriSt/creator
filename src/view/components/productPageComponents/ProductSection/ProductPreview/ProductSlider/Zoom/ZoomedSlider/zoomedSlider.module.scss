@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.zoom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  --swiper-theme-color: var(--brand-color);
+  color: var(--brand-color);
+}
+.close {
+  width: 48px;
+  height: 48px;
+  border-radius: 45px;
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slider_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+  position: unset;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}

@@ -1,0 +1,20 @@
+@import '../../../styles/colors';
+@import '../../../styles/sizes';
+
+.wrapper {
+  padding: $token 0;
+}
+
+.user_picks {
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.elem_wrapper {
+  position: unset;
+}

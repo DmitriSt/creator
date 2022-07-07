@@ -1,0 +1,71 @@
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
+
+$width: 32px;
+$height: 16px;
+$padding: 2px;
+$point-size: $height - $padding * 2;
+
+.switch {
+  @include unselectable;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-family: 'MerriweatherSans', sans-serif;
+  color: $gray-text;
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .title {
+    margin-right: 10px;
+    color: #7E898E;
+  }
+  .wrapper {
+    display: flex;
+    cursor: pointer;
+    input {
+      display: none;
+      &:checked {
+        & ~ .slider {
+          background-color: var(--brand-color);
+        }
+        & ~ .status {
+          color: var(--brand-color);
+        }
+      }
+      &:checked + .slider:before {
+        transform: translateX($width - $point-size - 2 * $padding);
+      }
+    }
+    .slider {
+      width: $width;
+      height: $height;
+      position: relative;
+      background-color: transparentize($gray-text, 0.5);
+      border-radius: $height / 2;
+      transition: 0.4s background-color;
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: $point-size;
+        height: $point-size;
+        left: $padding;
+        top: $padding;
+        background-color: #FFF;
+        transition: 0.4s transform;
+        border-radius: 50%;
+      }
+    }
+  }
+  .status {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 6px;
+  }
+}
+
+
+
+

@@ -1,0 +1,34 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/sizes';
+@import '../../../../styles/vars';
+
+.menu_list1 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 100%;
+  list-style-type: none;
+  margin: 0 0 0 0 - $token / 2;
+  padding: 0;
+  z-index: $top-layer;
+  text-decoration: none;
+}
+
+.menu_list2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: absolute;
+  width: 200px;
+  height: auto;
+  min-height: 100%;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(101, 113, 118, 0.2);
+  top: 0;
+  right: -200px;
+  padding: 0;
+}

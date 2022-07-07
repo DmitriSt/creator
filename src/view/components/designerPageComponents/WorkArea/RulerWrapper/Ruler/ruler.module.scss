@@ -1,0 +1,111 @@
+@import '../../../../../styles/colors';
+
+.wrapper {
+  position: absolute;
+  background-color: white;
+  box-sizing: border-box;
+}
+.wrapper_horizontal {
+  left: 22px;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 22px;
+  border-bottom: 1px solid $brand-color-light;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 22px;
+    left: -22px;
+    width: 22px;
+    background-color: white;
+  }
+}
+.wrapper_vertical {
+  top: 22px;
+  left: 0;
+  bottom: 0;
+  width: 22px;
+  min-height: 100%;
+  border-right: 1px solid $brand-color-light;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+}
+.list_vertical {
+  width: 100%;
+  left: 0;
+  flex-direction: column;
+}
+.list_horizontal {
+  top: 0;
+  height: 100%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  height: 100%;
+}
+.item_horizontal {
+  &:after,
+  &:not(:last-child):before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 1px;
+    height: 7px;
+    background-color: #BECCDB;
+  }
+  &:after {
+    left: -0.5px;
+  }
+  &:not(:last-child):before {
+    left: calc(50% - 0.5px);
+  }
+}
+.item_vertical {
+  justify-self: flex-start;
+  width: 100%;
+  &:after,
+  &:not(:last-child):before {
+    content: '';
+    position: absolute;
+    right: -1px;
+    width: 7px;
+    height: 1px;
+    background-color: #BECCDB;
+  }
+  &:after {
+    top: -0.5px;
+  }
+  &:not(:last-child):before {
+    bottom: calc(50% - 0.5px);
+  }
+}
+.value {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: bold;
+  color: $gray-text;
+  height: 14px;
+}
+.value_vertical {
+  top: 0;
+  right: 6px;
+  transform: rotate(-90deg) translate(50%, 0);
+  width: 14px;
+}
+.value_horizontal {
+  left: -50%;
+  bottom: 6px;
+}
